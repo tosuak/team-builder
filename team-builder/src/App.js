@@ -3,7 +3,8 @@ import Form from './Form.js'
 import './App.css';
 
 const initialFormValues = {
-  name: '',
+  firstName: '',
+  lastName: '',
   email: '',
   role: ''
 };
@@ -19,7 +20,8 @@ function App() {
 
   const submitForm = () => {
     const newMember = {
-      name: formValues.name.trim(),
+      firstName: formValues.firstName.trim(),
+      lastName: formValues.lastName.trim(),
       email: formValues.email.trim(),
       role: formValues.role
     }
